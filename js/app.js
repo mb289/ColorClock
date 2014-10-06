@@ -10,12 +10,12 @@ function displayTime() {
     m = d.getMinutes();//date.getMinutes
     s = d.getSeconds();//date.getSeconds
 
-   //time settings set to "0"
+    //time settings set to "0"
     if (h <= 9) h = '0' + h;
     if (m <= 9) m = '0' + m;
     if (s <= 9) s = '0' + s;
     
-    //set time
+
     document.getElementById("container").innerHTML = h + ":" + m + ":" + s;
 
     //function triggerd every second
