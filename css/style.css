@@ -6,52 +6,77 @@
 html, body {
     height: 100%;
 }
-@-webkit-keyframes pulse {
+
+
+/*@-webkit-keyframes pulse {
     0% {
-        background-color: #000000;
+        background: -webkit-radial-gradient(center, circle farthest-corner, #000000 0%, #000000 99%, #FF0000 100%);;
+    }
+    5% {
+        background: -webkit-radial-gradient(center, circle farthest-corner, #000000 0%, #000000 89%, #FF0000 100%); ;
     }
     10% {
-        background-color: #190000;
+        background: -webkit-radial-gradient(center, circle farthest-corner, #000000 0%, #000000 70%, #FF0000 100%);;
+    }
+    15% {
+        bbackground: -webkit-radial-gradient(center, circle farthest-corner, #000000 0%, #000000 57%, #FF0000 100%);
     }
     20% {
-        background-color: #330000;
+        background: -webkit-radial-gradient(center, circle farthest-corner, #000000 0%, #000000 45%, #FF0000 100%);
+    }
+    25% {
+        background: -webkit-radial-gradient(center, circle farthest-corner, #000000 0%, #000000 37%, #FF0000 100%); 
     }
     30% {
-        background-color: #4c0000;
+        background: -webkit-radial-gradient(center, circle farthest-corner, #000000 0%, #000000 33%, #FF0000 100%);
+    }
+    35% {
+        background: -webkit-radial-gradient(center, circle farthest-corner, #000000 0%, #000000 26%, #FF0000 100%);
     }
     40% {
-        background-color: #660000;
+        background: -webkit-radial-gradient(center, circle farthest-corner, #000000 0%, #000000 17%, #FF0000 100%);
+    }
+    45% {
+        background: -webkit-radial-gradient(center, circle farthest-corner, #000000 0%, #000000 13%, #FF0000 100%);
     }
     50% {
-        background-color: #7f0000;
+        background: -webkit-radial-gradient(center, circle farthest-corner, #000000 0%, #000000 9%, #FF0000 100%);
     }
-    60% {
-        background-color: #990000;
-    }
-    70% {
-        background-color: #b20000;
-    }
-    80% {
-        background-color: #cc0000;
-    }
-    90% {
-        background-color: #e50000;
-    }
-    90% {
-        background-color: #ff0000;
-    }
-}
+}*/
+
 body {
-    background-color: #000000;
-    -webkit-animation: pulse 25s infinite alternate;
+    background-color: black;
+   /* -webkit-animation: pulse 25s ease infinite alternate;*/
+   transition: all 2s ease;
+
 }
+
+
 #container {
     color: white;
     font: 64px/64px Pinyon Script;
-    height: 64px;
+    height: 100%;
     position: relative;
-    top: 50%;
-    margin-top: -32px;
+    /*top: 50%;
+    /*margin-top: -32px;*/
     text-align: center;
+    line-height: 12em;
+    transition: all 5s ease;
+
 }
+
+
+@media (min-width: 600px) {
+    .container {
+        font-size: 5em;
+        min-width: 500px;
+    }
+}
+@media (min-width: 1024px) {
+    .container {
+        font-size: 10em;
+        min-width: 800px;
+    }
+}
+
 
